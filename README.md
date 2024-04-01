@@ -11,8 +11,8 @@ Categorized in 2 parts of DNNs
 
 For my result, select 7 features from CUEE dataset
 
-- $I$ Irradiance (W/$m^2$)
-- $I_clr$ Irradiance clear sky (W/$m^2$)
+- $I$ Irradiance (W/m^2)
+- $I_{clr}$ Irradiance clear sky (W/m^2)
 - $latt$ latitude for each sensor at CUEE department  
 - $long$ longitude for each sensor at CUEE department  
 - $day$ during which day was the data collected
