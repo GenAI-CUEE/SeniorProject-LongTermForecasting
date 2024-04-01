@@ -5,9 +5,9 @@ This repository describes the process of training and inferring Irradiance from 
 
 Categorized in 2 parts of DNNs
 
-        1. Based line model ( Regression Long-Short Term Memory (RLSTM) )
+1. Based line model ( Regression Long-Short Term Memory (RLSTM) )
 
-                This model applied with recurrent neural network (RNN) model which the concept is keeping or removing previous sequence data.
+   This model applied with recurrent neural network (RNN) model which the concept is keeping or removing previous sequence data.
                 
 ![Structure RLSTM](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/c446ff7f-655a-441a-94eb-a0200684ee2e)
 
