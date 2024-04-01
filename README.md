@@ -5,9 +5,9 @@ This repository describes the process to train and inferring Irradiance from CUE
 
 Categorized in 2 parts of DNNs
 
-: Transformer based Model ( Transformer, Autoformer, Informer)
-                               
-: Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
+        : Transformer based Model ( Transformer, Autoformer, Informer)
+                                       
+        : Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
 
 For my result, select 7 features from CUEE dataset
 
