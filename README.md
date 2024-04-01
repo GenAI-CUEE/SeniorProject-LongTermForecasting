@@ -60,8 +60,8 @@ Output format : [ Number of Batch size, Predict length, Number of features ]
    
 5. After that, Execute `cuee_scripts/Long-Exp/` choose the model for inferring.
 
-  If choose mode="valids" : Result will be contained in valid folder
+          If choose mode="valids" : Result will be contained in valid folder
 
-  If choose mode="test"   : Result will contain in test folder 
+          If choose mode="test"   : Result will contain in test folder 
 
 7. For tuning parameter "d_model", Execute "plot_validation.py" to show the best parameters.
