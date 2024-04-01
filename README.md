@@ -11,7 +11,7 @@ Categorized in 2 parts of DNNs
 
         : Based line model ( Regression Long-Short Term Memory (RLSTM) )
 
-For my result, select 7 features from CUEE dataset
+For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airmass coefficient and Clear-sky index )
 
 - $I$ Irradiance (W/m^2)
 - $I_{clr}$ Irradiance clear sky (W/m^2)
