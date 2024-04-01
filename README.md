@@ -31,10 +31,7 @@ __3. PatchTST__
 
 __4. Transformer-Based ( Transformer, Autoformer and Informer )__
 
-   This assumption model is using self-attention component that show the correlation of each features are correlate with the equation $Self-Attention(Q,K,V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
-
-   The another main concept is encoder-deconder component and each model using different type of self-attention 
-
+   This assumption model is using self-attention component that show the correlation of each features are correlate with the equation $Self-Attention(Q,K,V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V$ The another main concept is encoder-deconder component and each model using different type of self-attention 
 
    __Transformer :__ vanila transformer using encoder decoder models with self-attention.
    
@@ -47,7 +44,8 @@ __4. Transformer-Based ( Transformer, Autoformer and Informer )__
 
    __Informer :__ adjusted self-attention that use only high score from self attention to represent correlation.
    
-   
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 
 For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airmass coefficient and Clear-sky index )
 
