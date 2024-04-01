@@ -5,36 +5,37 @@ This repository describes the process of training and inferring Irradiance from 
 
 Categorized in 2 parts of DNNs
 
-1. Based line model ( Regression Long-Short Term Memory (RLSTM) )
+__1. Based line model ( Regression Long-Short Term Memory (RLSTM) )__
 
    This assumption model applied with recurrent neural network (RNN) model which the concept is keeping or removing previous sequence data.
                 
 ![Structure RLSTM](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/c446ff7f-655a-441a-94eb-a0200684ee2e)
 
-2. Channel independent Model ( DLinear, NLinear, Linear )
+__2. Channel independent Model ( DLinear, NLinear, Linear )__
    
-   This assumption model is channel features are independent and not correlate between other channel in time series forecasting tasks by represent vanila linear model to show that time series features are not correlated.
+   This assumption model is channel features are independent and not correlate between other channel in time series forecasting tasks by represent vanila linear model to show that time series features are not correlated.![Structure Linear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/1e675eda-3bea-470d-a5c5-17b9543bf6ae)
+
+   DLinear : using series decomposition and split in term of trend and seasonality    component then aggregate together.![Structure DLinear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/f163324d-5b48-495f-bde9-870ce7c46e11)
    
-![Structure Linear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/1e675eda-3bea-470d-a5c5-17b9543bf6ae)
+   NLinear : using when there is a distribution shifting problem in dataset, subtract the last value sequence then pass through a linear model then add the subtracted part into the model![Structure NLinear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/a8eab30c-c8ee-4ae3-8384-6dd385d4ddab)
 
-DLinear : using series decomposition and split in term of trend and seasonality    component then aggregate together.
-
-![Structure DLinear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/f163324d-5b48-495f-bde9-870ce7c46e11)
-   
-NLinear : using when there is a distribution shifting problem in dataset, subtract the last value sequence then pass through a linear model then add the subtracted part into the model
-
-![Structure NLinear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/a8eab30c-c8ee-4ae3-8384-6dd385d4ddab)
-
-3. PatchTST
+__3. PatchTST__
    This assumption model using channel independent concept and adding patching teqnique to convert sequence length in term of patch number and each patch has the same length. Patching number and patch length is the hyper parameter for this model
 
 ![Structure PatchTST](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/9f12ac4e-4437-45c2-91b9-e4cee857910a)
 
-4. Transformer-Based ( Transformer, Autoformer and Informer)
+__4. Transformer-Based ( Transformer, Autoformer and Informer )__
 
    This assumption model is using self-attention component that show the correlation of each features are correlate with the equation
 
    $\text{Self-Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
+
+   Each model using different type of self-attention
+
+   Autoformer : applied with auto-correlation between channels.
+
+   ![Autocorrelation Block in Autoformer](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/cc51861d-92bc-4c3d-8c72-b1f8e63d7b4b)
+
 
 For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airmass coefficient and Clear-sky index )
 
@@ -46,7 +47,12 @@ For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airma
 - $month$ during which month was the data collected
 - $hour$ collecting data at the hour of that day using Coordinated Universal Time (UTC)
 
-![Prediction MS](Pictures And Result/Predicting Result For Multifeatures Time Series Forecasting ( Normalize value ).png)
+Prediction with unnormalize data.
+![Predicting Result For Multifeatures Time Series Forecasting ( Normalize value )](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/2ccb4760-5f9e-4cc3-ba7d-9ab17293a2d4)
+
+Prediction with normalize data
+![Predicting Result for Univariate Time Series Forecasting ( Real Irradiance value )](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/508f088c-3067-4462-832c-df463f6a48fc)
+
 
 Input format  : [ Number of Batch size, Sequence length, Number of features ]
 
