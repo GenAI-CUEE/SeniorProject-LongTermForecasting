@@ -29,9 +29,11 @@ __4. Transformer-Based ( Transformer, Autoformer and Informer )__
 
    This assumption model is using self-attention component that show the correlation of each features are correlate with the equation $Self-Attention(Q,K,V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
 
-   Each model using different type of self-attention
+   The another main concept is encoder-deconder component and each model using different type of self-attention 
 
-   Transformer 
+
+   Transformer : vanila transformer using encoder decoder models with self-attention.![Enc_Dec](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/7c9d3801-760a-462c-924e-de099a0c7f2c)
+
 
    Autoformer : applied with auto-correlation between channels.![Autocorrelation Block in Autoformer](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/cc51861d-92bc-4c3d-8c72-b1f8e63d7b4b)
    Informer : adjusted self-attention that use only high score from self attention to represent correlation.
