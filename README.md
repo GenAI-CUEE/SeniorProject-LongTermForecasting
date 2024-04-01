@@ -27,7 +27,7 @@ __3. PatchTST__
 
 __4. Transformer-Based ( Transformer, Autoformer and Informer )__
 
-   This assumption model is using self-attention component that show the correlation of each features are correlate with the equation $\Self-Attention(Q,K,V) = \softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
+   This assumption model is using self-attention component that show the correlation of each features are correlate with the equation $Self-Attention(Q,K,V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
 
    Each model using different type of self-attention
 
