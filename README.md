@@ -1,10 +1,11 @@
 # GenAI-CUEE-SeniorProject-LongTermForecasting
 SeniorProject LongTermForecasting is developed by Tanan Boonyasirikul
 
-This repository describes process to train and infer Irradiance from CUEE Dataset by using Deep neural network
+This repository describes the process to train and inferring Irradiance from CUEE Dataset by using a Deep neural network.
 
-categoralize in 2 part of DNNs : Transformer based Model ( Transformer, Autoformer, Informer)
-                               : Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
+Categorized in 2 parts of DNNs: Transformer based Model ( Transformer, Autoformer, Informer)
+                               
+: Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
 
 For my result, select 7 features from CUEE dataset
 
