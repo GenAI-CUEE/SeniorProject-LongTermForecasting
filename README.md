@@ -33,7 +33,9 @@ Categorized in 2 parts of DNNs
 
 4. Transformer-Based ( Transformer, Autoformer and Informer)
 
-   This assumption model is using self-attention component that show the correlation of each features are correlate with the equation $\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
+   This assumption model is using self-attention component that show the correlation of each features are correlate with the equation
+
+$\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
 
 For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airmass coefficient and Clear-sky index )
 
