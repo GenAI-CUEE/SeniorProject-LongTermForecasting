@@ -9,7 +9,8 @@ Categorized in 2 parts of DNNs
 
                 This model applied with recurrent neural network (RNN) model which the concept is keeping or removing previous sequence data.
                 
-![RLSTM](Pictures And Result/Structure RLSTM.jpg)
+![Structure RLSTM](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/c446ff7f-655a-441a-94eb-a0200684ee2e)
+
 
 
         Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
