@@ -4,7 +4,6 @@ SeniorProject LongTermForecasting is developed by Tanan Boonyasirikul
 This repository describes process to train and infer Irradiance from CUEE Dataset by using Deep neural network
 
 categoralize in 2 part of DNNs : Transformer based Model ( Transformer, Autoformer, Informer)
-
                                : Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
 
 For my result, select 7 features from CUEE dataset
