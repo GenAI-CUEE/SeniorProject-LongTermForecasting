@@ -9,6 +9,8 @@ Categorized in 2 parts of DNNs
                                        
         : Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
 
+        : Based line model ( Regression Long-Short Term Memory (RLSTM) )
+
 For my result, select 7 features from CUEE dataset
 
 - $I$ Irradiance (W/m^2)
@@ -20,6 +22,7 @@ For my result, select 7 features from CUEE dataset
 - $hour$ collecting data at the hour of that day using Coordinated Universal Time (UTC)
 
 Input format  : [ Number of Batch size, Sequence length, Number of features ]
+
 Output format : [ Number of Batch size, Predict length, Number of features ]
 
 | Files/Folders | Description |
