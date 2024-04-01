@@ -21,6 +21,8 @@ For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airma
 - $month$ during which month was the data collected
 - $hour$ collecting data at the hour of that day using Coordinated Universal Time (UTC)
 
+![image](pics/pred-4.png)
+
 Input format  : [ Number of Batch size, Sequence length, Number of features ]
 
 Output format : [ Number of Batch size, Predict length, Number of features ]
