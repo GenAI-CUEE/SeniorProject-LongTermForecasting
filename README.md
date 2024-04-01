@@ -17,8 +17,7 @@ Categorized in 2 parts of DNNs
    
 ![Structure Linear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/1e675eda-3bea-470d-a5c5-17b9543bf6ae)
 
-
-   DLinear : using series decomposition and split in term of trend and seasonality component then aggregate together.
+   DLinear : using series decomposition and split in term of trend and seasonality    component then aggregate together.
 
 ![Structure DLinear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/f163324d-5b48-495f-bde9-870ce7c46e11)
 
@@ -35,7 +34,7 @@ Categorized in 2 parts of DNNs
 
    This assumption model is using self-attention component that show the correlation of each features are correlate with the equation
 
-         $\text{Self-Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
+   $\text{Self-Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
 
 For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airmass coefficient and Clear-sky index )
 
