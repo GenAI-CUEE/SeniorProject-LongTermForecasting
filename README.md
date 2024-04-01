@@ -20,22 +20,23 @@ __2. Channel independent Model ( DLinear, NLinear, Linear )__
    NLinear : using when there is a distribution shifting problem in dataset, subtract the last value sequence then pass through a linear model then add the subtracted part into the model![Structure NLinear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/a8eab30c-c8ee-4ae3-8384-6dd385d4ddab)
 
 __3. PatchTST__
+   
    This assumption model using channel independent concept and adding patching teqnique to convert sequence length in term of patch number and each patch has the same length. Patching number and patch length is the hyper parameter for this model
 
 ![Structure PatchTST](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/9f12ac4e-4437-45c2-91b9-e4cee857910a)
 
 __4. Transformer-Based ( Transformer, Autoformer and Informer )__
 
-   This assumption model is using self-attention component that show the correlation of each features are correlate with the equation
-
-   $\text{Self-Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
+   This assumption model is using self-attention component that show the correlation of each features are correlate with the equation $\Self-Attention(Q,K,V) = \softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
 
    Each model using different type of self-attention
 
-   Autoformer : applied with auto-correlation between channels.
+   Transformer 
 
-   ![Autocorrelation Block in Autoformer](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/cc51861d-92bc-4c3d-8c72-b1f8e63d7b4b)
-
+   Autoformer : applied with auto-correlation between channels.![Autocorrelation Block in Autoformer](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/cc51861d-92bc-4c3d-8c72-b1f8e63d7b4b)
+   Informer : adjusted self-attention that use only high score from self attention to represent correlation.
+   
+   
 
 For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airmass coefficient and Clear-sky index )
 
