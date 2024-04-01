@@ -16,11 +16,12 @@ Categorized in 2 parts of DNNs
    This assumption model is channel features are independent and not correlate between other channel in time series forecasting tasks by represent vanila linear model to show that time series features are not correlated.
    
 ![Structure Linear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/1e675eda-3bea-470d-a5c5-17b9543bf6ae)
-         DLinear : using series decomposition and split in term of trend and seasonality    component then aggregate together.
+
+DLinear : using series decomposition and split in term of trend and seasonality    component then aggregate together.
 
 ![Structure DLinear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/f163324d-5b48-495f-bde9-870ce7c46e11)
    
-            NLinear : using when there is a distribution shifting problem in dataset, subtract the last value sequence then pass through a linear model then add the subtracted part into the model
+NLinear : using when there is a distribution shifting problem in dataset, subtract the last value sequence then pass through a linear model then add the subtracted part into the model
 
 ![Structure NLinear](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/a8eab30c-c8ee-4ae3-8384-6dd385d4ddab)
 
