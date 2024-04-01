@@ -5,7 +5,18 @@ This repository describes the process of training and inferring Irradiance from 
 
 Categorized in 2 parts of DNNs
 
-        : Transformer-based Model ( Transformer, Autoformer, Informer)
+        1. Based line model ( Regression Long-Short Term Memory (RLSTM) )
+
+                This model applied with recurrent neural network (RNN) model which the concept is keeping or removing previous sequence data.
+                
+![image](pics/Structure RLSTM.jpg)
+
+
+        Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
+
+        
+
+        Transformer-based Model ( Transformer, Autoformer, Informer)
                                        
         : Channel independent Model ( DLinear, NLinear, Linear and PatchTST)
 
@@ -21,7 +32,7 @@ For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airma
 - $month$ during which month was the data collected
 - $hour$ collecting data at the hour of that day using Coordinated Universal Time (UTC)
 
-![image](pics/pred-4.png)
+![image](pics/Predicting Result For Multifeatures Time Series Forecasting ( Normalize value ).png)
 
 Input format  : [ Number of Batch size, Sequence length, Number of features ]
 
