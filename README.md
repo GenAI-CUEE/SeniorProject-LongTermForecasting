@@ -2,7 +2,7 @@
 SeniorProject LongTermForecasting is developed by Tanan Boonyasirikul
 
 This repository describes the process of training and inferring Irradiance from CUEE Dataset by using a Deep neural network.Categorized in 2 parts of DNNs
-
+<img src="/pics/" width='25'>
 __1. Based line model ( Regression Long-Short Term Memory (RLSTM) )__
 
    This assumption model applied with recurrent neural network (RNN) model which the concept is keeping or removing previous sequence data.
@@ -25,7 +25,7 @@ __2. Channel independent Model ( DLinear, NLinear, Linear )__
 
 __3. PatchTST__
    
-   This assumption model using channel independent concept and adding patching teqnique to convert sequence length in term of patch number and each patch has the same length. Patching number and patch length is the hyper parameter for this model
+   This assumption model using channel independent concept and adding patching teqnique to convert sequence length in term of patch number and each patch has the same length. Patching number and patch length is the hyper parameter for this model and every channel train on the same backbone model by using encoder block from transformer model.
 
 ![Structure PatchTST](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/9f12ac4e-4437-45c2-91b9-e4cee857910a)
 
