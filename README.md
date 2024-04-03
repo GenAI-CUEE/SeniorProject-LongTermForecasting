@@ -111,3 +111,110 @@ Output format : [ Number of Batch size, Predict length, Number of features ]
           If choose mode="test"   : Result will contain in test folder 
 
 7. For tuning parameter "d_model", Execute "plot_validation.py" to show the best parameters.
+
+# Citation
+@article{2020RNN,
+   title={Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) network},
+   volume={404},
+   ISSN={0167-2789},
+   url={http://dx.doi.org/10.1016/j.physd.2019.132306},
+   DOI={10.1016/j.physd.2019.132306},
+   journal={Physica D: Nonlinear Phenomena},
+   publisher={Elsevier BV},
+   author={Sherstinsky, Alex},
+   year={2020},
+   month=mar, pages={132306} }
+
+@article{1997LSTM,
+author = {Hochreiter, Sepp and Schmidhuber, J\"{u}rgen},
+title = {Long Short-Term Memory},
+year = {1997},
+issue_date = {November 15, 1997},
+publisher = {MIT Press},
+address = {Cambridge, MA, USA},
+volume = {9},
+number = {8},
+issn = {0899-7667},
+url = {https://doi.org/10.1162/neco.1997.9.8.1735},
+doi = {10.1162/neco.1997.9.8.1735}, 
+journal = {Neural Comput.},
+month = {nov},
+pages = {1735–1780},
+numpages = {46}
+}
+
+
+@misc{staudemeyer2019LSTM,
+      title={Understanding LSTM -- a tutorial into Long Short-Term Memory Recurrent Neural Networks}, 
+      author={Ralf C. Staudemeyer and Eric Rothstein Morris},
+      year={2019},
+      eprint={1909.09586},
+      archivePrefix={arXiv},
+      primaryClass={cs.NE}
+}
+
+
+@inproceedings{NIPS2017_Attention,
+ author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Attention is All you Need},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+@inproceedings{wu2021_Autoformer,
+  title={Autoformer: Decomposition Transformers with {Auto-Correlation} for Long-Term Series Forecasting},
+  author={Haixu Wu and Jiehui Xu and Jianmin Wang and Mingsheng Long},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2021}
+}
+
+
+@book{forecasting_book,
+title = "Forecasting: Principles and Practice",
+author = "Rob Hyndman and G. Athanasopoulos",
+year = "2021",
+language = "English",
+publisher = "OTexts",
+address = "Australia",
+edition = "3rd",
+}
+
+
+@inproceedings{Zeng2022AreTE,
+  title={Are Transformers Effective for Time Series Forecasting?},
+  author={Ailing Zeng and Muxi Chen and Lei Zhang and Qiang Xu},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2023}
+}
+
+
+@inproceedings{haoyietal-informer-2021,
+  author    = {Haoyi Zhou and
+               Shanghang Zhang and
+               Jieqi Peng and
+               Shuai Zhang and
+               Jianxin Li and
+               Hui Xiong and
+               Wancai Zhang},
+  title     = {Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting},
+  booktitle = {The Thirty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI} 2021, Virtual Conference},
+  volume    = {35},
+  number    = {12},
+  pages     = {11106--11115},
+  publisher = {{AAAI} Press},
+  year      = {2021},
+}
+
+@misc{triebe2021neuralprophet,
+      title={NeuralProphet: Explainable Forecasting at Scale}, 
+      author={Oskar Triebe and Hansika Hewamalage and Polina Pilyugina and Nikolay Laptev and Christoph Bergmeir and Ram Rajagopal},
+      year={2021},
+      eprint={2111.15397},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
