@@ -49,13 +49,13 @@ __4. Transformer-Based ( Transformer, Autoformer and Informer )__
 
 For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airmass coefficient and Clear-sky index )
 
-- $I$ Irradiance (W/m^2)
-- $I_{clr}$ Irradiance clear sky (W/m^2)
-- $latt$ latitude for each sensor at CUEE department  
-- $long$ longitude for each sensor at CUEE department  
-- $day$ during which day was the data collected
-- $month$ during which month was the data collected
-- $hour$ collecting data at the hour of that day using Coordinated Universal Time (UTC)
+- $I$       Irradiance ($W/m^2$)
+- $I_{clr}$ Irradiance clear sky ($W/m^2$)
+- $latt$    latitude for each sensor at CUEE department  
+- $long$    longitude for each sensor at CUEE department  
+- $day$     during which day was the data collected
+- $month$   during which month was the data collected
+- $hour$    collecting data at the hour of that day using Coordinated Universal Time (UTC+07:00)
 
 __Prediction output with unnormalize data__
 ![Predicting Result For Multifeatures Time Series Forecasting ( Normalize value )](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/2ccb4760-5f9e-4cc3-ba7d-9ab17293a2d4)
