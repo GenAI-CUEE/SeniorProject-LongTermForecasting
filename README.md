@@ -97,7 +97,7 @@ Output format : [ Number of Batch size, Predict length, Number of features ]
 | `pred_length` | prediction sequence length | 
 |`feature_type` |  "MS" and "S" for multivariate and univariate time series forecasting respectively|
 | `d_model` | dimension of model |
-| `embed_type` | 4 types of DataEmbedding (combination between value encoding, position encoding and temporal(time) encoding) |
+| `embed_type` | 4 types of DataEmbedding (combination between value, position and temporal (time) encoding) |
 | `e_layers` | number of encoder layer |
 | `d_layers` | number of decoder layer |
 | `stride` | number of strides in data preprocessing for PatchTST model  | 
