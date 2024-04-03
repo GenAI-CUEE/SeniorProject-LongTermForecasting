@@ -57,10 +57,10 @@ For my result, select 7 features from CUEE dataset ( Not use Zenith angle, Airma
 - $month$ during which month was the data collected
 - $hour$ collecting data at the hour of that day using Coordinated Universal Time (UTC)
 
-Prediction with unnormalize data.
+__Prediction output with unnormalize data__
 ![Predicting Result For Multifeatures Time Series Forecasting ( Normalize value )](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/2ccb4760-5f9e-4cc3-ba7d-9ab17293a2d4)
 
-Prediction with normalize data
+__Prediction output with normalize data__
 ![Predicting Result for Univariate Time Series Forecasting ( Real Irradiance value )](https://github.com/GenAI-CUEE/GenAI-CUEE-SeniorProject-LongTermForecasting/assets/145090574/508f088c-3067-4462-832c-df463f6a48fc)
 
 
