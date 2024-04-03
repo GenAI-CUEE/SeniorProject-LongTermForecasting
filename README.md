@@ -2,7 +2,7 @@
 SeniorProject LongTermForecasting is developed by Tanan Boonyasirikul
 
 This repository describes the process of training and inferring Irradiance from CUEE Dataset by using a Deep neural network.Categorized in 2 parts of DNNs
-<img src="/pics/Structure Autoformer.jpg" width='25'>
+
 __1. Based line model ( Regression Long-Short Term Memory (RLSTM) )__
 
    This assumption model applied with recurrent neural network (RNN) model which the concept is keeping or removing previous sequence data.
